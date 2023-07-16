@@ -1,0 +1,37 @@
+:root {
+  --height: 300px;
+  --width: 500px;
+  --aspect-ratio: 1;
+}
+
+.carousel {
+  height: var(--height);
+  width: var(--width);
+  position: relative;
+}
+.image-wrapper {
+  display: flex;
+  overflow: hidden;
+}
+.carousel-image {
+  object-fit: cover;
+  aspect-ratio: var(--aspect-ratio);
+}
+
+.carousel-button {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  background-color: white;
+  border: 1px solid gray;
+  font-size: 25px;
+}
+
+.next {
+  right: 30px;
+  /* background-color: transparent; */
+}
+
+.prev {
+  left: 30px;
+}
